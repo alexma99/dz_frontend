@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        p {
+            border: 1px solid;
+        }
+
+        .flexcontainer {
+            display: flex;
+            flex-direction: row;
+            /* блоки в строку */
+            flex-wrap: wrap;
+            /* если не помещается, то с другой строки */
+            /* align-items для поперечной оси */
+            border: 1px solid blue;
+            align-items: stretch;
+            height: 30vh;
+        }
+
+        .flexp {
+            flex-basis: 10vw;
+            /* align-self: center; */
+            /* flex-grow: 1; */
+            /* flex-grow расширяет блок на все свободное место; flex-shrink не позволяет уменьшаться блоку */
+        }
+
+        .flex-container {
+            display: flex;
+        }
+
+        .flex_p {
+            margin: auto;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Flexbox</h1>
+    <!-- <div class="flexcontainer">
+        <p class="flexp">Абзац 1</p>
+        <p class="flexp">Абзац 2</p>
+        <p class="flexp">Абзац 3</p>
+        <p class="flexp">Абзац 4</p>
+    </div> -->
+    <div class="flex-container">
+        <p class="flex_p">Абзац 1</p>
+        <p class="flex_p">Абзац 2</p>
+        <p class="flex_p">Абзац 3</p>
+    </div>
+</body>
+
+</html>
