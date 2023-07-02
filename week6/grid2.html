@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header {
+            background: bisque;
+            grid-area: header;
+        }
+
+        .sidebar {
+            background: burlywood;
+            grid-area: sidebar;
+        }
+
+        .main {
+            background: aquamarine;
+            grid-area: main;
+        }
+
+        .footer {
+            background: cadetblue;
+            grid-area: footer;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 10% 1fr 10%;
+            height: 90vh;
+            grid-template-areas: "header header header header"
+                "sidebar main main main"
+                "footer footer footer footer";
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Гриды</h1>
+    <div class="container">
+        <header class="header">header</header>
+        <aside class="sidebar">sidebar</aside>
+        <main class="main">content</main>
+        <footer class="footer">footer</footer>
+    </div>
+
+</body>
+
+</html>
