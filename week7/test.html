@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header {
+            background: bisque;
+            grid-area: header;
+        }
+
+        .sidebar {
+            background: burlywood;
+            grid-area: sidebar;
+        }
+
+        .main {
+            background: aquamarine;
+            grid-area: main;
+        }
+
+
+
+
+
+        .nav-item {
+            padding: 5px;
+            font-size: 2em;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: flex-end;
+            width: 50%;
+        }
+
+        .pict {
+            max-width: 50%;
+            /* width: 100%; */
+        }
+
+        @media screen and (min-width:600px) {
+            .footer {
+                background: cadetblue;
+                grid-area: footer;
+            }
+
+            .container {
+                display: grid;
+                height: 90vh;
+                width: 100vw;
+                grid-template-columns: 30% 70%;
+                grid-template-rows: 15% 1fr 15%;
+                grid-template-areas: "header header header header"
+                    "sidebar main main main"
+                    "footer footer footer footer";
+
+            }
+        }
+
+        @media screen and (max-width:599px) {
+            .footer {
+                display: none;
+            }
+
+            .header {
+                height: 30vh;
+            }
+
+            .main {
+                height: 30vh;
+            }
+
+            .sidebar {
+                height: 30vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Адаптив</h1>
+    <div class="container">
+        <header class="header">header
+            <nav class="menu">
+                <!-- <span class="nav-item">menu1</span>
+                <span class="nav-item">menu2</span>
+                <span class="nav-item">menu3</span> -->
+            </nav>
+        </header>
+        <aside class="sidebar">sidebar</aside>
+        <main class="main">content
+            <!-- <div><img class="pict" src="assets/images/cat.jpeg" alt="cat"></div> -->
+        </main>
+        <footer class="footer">footer</footer>
+    </div>
+
+</body>
+
+</html>
