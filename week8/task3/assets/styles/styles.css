@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    height: 100vh;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.header__top {
+    display: flex;
+    border-bottom: 1px solid lightgray;
+    align-items: center;
+    padding: 15px;
+}
+
+.header__top__circles {
+    display: flex;
+    gap: 5px;
+}
+
+.header__top__circles__circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.header__top__circles__circle:nth-child(1) {
+    background-color: red;
+}
+
+.header__top__circles__circle:nth-child(2) {
+    background-color: orange;
+}
+
+.header__top__circles__circle:nth-child(3) {
+    background-color: green;
+}
+
+.header__top__vr {
+    flex-grow: 1;
+    text-align: center;
+    color: #000;
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.header__button {
+    display: flex;
+    padding: 50px 75px 0 75px;
+    justify-content: space-between;
+}
+
+.header__button-backet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-radius: 100px;
+    background: #5222D0;
+    padding: 15px;
+
+    width: 115px;
+    height: 38px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.header__button-backet-text {
+    color: #FFF;
+    font-family: Intro;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+main {
+    display: flex;
+}
+
+/*         @font-face {
+    font-family: 'Intro';
+    src: url('assets/Intro_Thin_Caps_Regular') format('opentype');
+} */
+
+.main__left {
+    padding: 76px 0 0 126px;
+}
+
+.main__left-about {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__left-about-head {
+    color: #000;
+    font-family: Intro;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.main__left-about-content {
+    color: var(--unnamed, #000);
+    font-family: Roboto Slab;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.main__left-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    background: #5222D0;
+    width: 270px;
+    height: 84px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.main__left-button-text {
+    color: #FFF;
+    font-family: Intro;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+footer {
+    display: flex;
+    padding: 0 0 80px 126px;
+    gap: 34px;
+
+    color: #5222D0;
+    font-family: Roboto Slab;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%;
+}
+
+footer>a {
+    text-decoration: none;
+}

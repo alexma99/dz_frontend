@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    height: 100vh;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+main {
+    margin: 30px 200px 0 200px;
+}
+
+
+.container-welcome {
+    font-size: 1.5rem;
+    padding: 40px 0 40px 20px;
+    background-color: lightgray;
+}
+
+.container-cards {
+    padding-top: 2rem;
+}
+
+.nav-link.active {
+    color: white;
+}
+
+h1 {
+    font-size: 3rem;
+}
